@@ -1,5 +1,7 @@
 # AlgorithmInvestigate
 
+!(https://github.com/user-attachments/assets/d8b79902-cc20-48dd-8e97-e7f392ad4e59)
+
 Welcome to Algoinvest.
 This is a software brand created and managed by Rohan Marar.
 
