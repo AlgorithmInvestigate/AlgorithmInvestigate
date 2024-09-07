@@ -46,24 +46,44 @@ nav ul li a:hover {
   letter-spacing: 2px;
 }
 
-/* Parallax Hero Section */
+/* Hero Section */
 .hero {
-  background: url('https://github.com/AlgorithmInvestigate/AlgorithmInvestigate/blob/main/images/Algoinvest.png') no-repeat center center/cover;
+  background: url('ai-bg.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  background-attachment: fixed;  /* Enables the parallax effect */
-  background-size: cover;
-  background-position: center;
 }
 
 .hero-content {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6); /* Slight transparency for text contrast */
-  padding: 2rem;
-  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00bcd4;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+.btn {
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #008c9e;
 }
 
 /* Section Styles */
@@ -71,7 +91,6 @@ nav ul li a:hover {
   padding: 4rem 2rem;
   text-align: center;
   background-color: #111;
-  min-height: 100vh; /* Set a large height to allow for scrolling */
 }
 
 .section h2 {
