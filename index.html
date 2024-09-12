@@ -79,6 +79,36 @@
   </form>
 </section>
 
+    <!-- EmailJS Script -->
+  <script type="text/javascript">
+    // Initialize EmailJS with your User ID
+    (function() {
+      emailjs.init("YOUR_USER_ID"); // Replace with your actual EmailJS user ID
+    })();
+
+    // Add an event listener to handle form submission
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+
+      // Collect form data
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      // Send the form data using EmailJS
+      emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+        from_name: name,
+        from_email: email,
+        message: message
+      }).then(function(response) {
+        // On success, show a message to the user
+        alert("Message sent successfully!");
+      }, function(error) {
+        // On failure, alert the user
+        alert("Failed to send message. Please try again later.");
+      });
+    });
+  </script>
   <!-- Footer -->
   <footer>
     <p>&copy; 2024 Algoinvest. All rights reserved.</p>
