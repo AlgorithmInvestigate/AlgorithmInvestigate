@@ -68,13 +68,13 @@
       </div>
   </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 </head>
 <body>
 
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
-  <h2>Hve an important message? Contact here</h2>
+  <h2>Have an important message? Contact here</h2>
   <form id="contactForm">
     <input type="text" id="name" name="from_name" placeholder="Your Name" required>
     <input type="email" id="email" name="from_email" placeholder="Your Email" required>
@@ -83,40 +83,44 @@
   </form>
 </section>
 
-    <!-- EmailJS Script -->
-  <script type="text/javascript">
-    // Initialize EmailJS with your User ID
-    (function() {
-      emailjs.init("zfGRwisTFhBJz9OQI"); // Replace with your actual EmailJS user ID
-    })();
+<!-- EmailJS Script -->
+<script type="text/javascript">
+  // Initialize EmailJS with your User ID
+  (function() {
+    emailjs.init("YOUR_USER_ID"); // Replace with your actual EmailJS user ID
+  })();
 
-    // Add an event listener to handle form submission
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the default form submission behavior
+  // Add an event listener to handle form submission
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
 
-      // Collect form data
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-      const message = document.getElementById("message").value;
+    // Collect form data
+    const from_name = document.getElementById("name").value;
+    const from_email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    const to_name = "Recipient Name"; // Hardcoded or add a field if necessary
 
-      console.log("Name:", name);
-      console.log("Email:", email);
-      console.log("Message:", message);
+    // Log form data for debugging
+    console.log("From Name:", from_name);
+    console.log("Email:", from_email);
+    console.log("Message:", message);
+    console.log("To Name:", to_name);
 
-      // Send the form data using EmailJS
-      emailjs.send("service_0ah5c9c", "template_1uk43fh", {
-        from_name: name,
-        from_email: email,
-        message: message
-      }).then(function(response) {
-        // On success, show a message to the user
-        alert("Message sent successfully!");
-      }, function(error) {
-        // On failure, alert the user
-        alert("Failed to send message. Please try again later.");
-      });
+    // Send the form data using EmailJS
+    emailjs.send("service_0ah5c9c", "template_1uk43fh", {
+      from_name: from_name,   // Matches {{from_name}} in your template
+      message: message,       // Matches {{message}} in your template
+      to_name: to_name        // Matches {{to_name}} in your template
+    }).then(function(response) {
+      // On success, show a message to the user
+      alert("Message sent successfully!");
+    }, function(error) {
+      // On failure, alert the user
+      alert("Failed to send message. Please try again later.");
+      console.error("EmailJS Error:", error); // Log error for debugging
     });
-  </script>
+  });
+</script>
   <!-- Footer -->
   <footer>
     <p>&copy; 2024 Algoinvest. All rights reserved.</p>
