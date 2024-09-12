@@ -68,6 +68,10 @@
       </div>
   </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+</head>
+<body>
+
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
   <h2>Hve an important message? Contact here</h2>
@@ -75,7 +79,7 @@
     <input type="text" id="name" name="from_name" placeholder="Your Name" required>
     <input type="email" id="email" name="from_email" placeholder="Your Email" required>
     <textarea id="message" name="message" placeholder="Your message" required></textarea>
-    <button type="submit" class="btn">Fill out your message here</button>
+    <button type="submit" class="btn">Submit</button>
   </form>
 </section>
 
@@ -94,6 +98,10 @@
       const name = document.getElementById("name").value;
       const email = document.getElementById("email").value;
       const message = document.getElementById("message").value;
+
+      console.log("Name:", name);
+      console.log("Email:", email);
+      console.log("Message:", message);
 
       // Send the form data using EmailJS
       emailjs.send("service_0ah5c9c", "template_1uk43fh", {
