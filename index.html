@@ -70,12 +70,12 @@
 
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
-  <h2>Contact here</h2>
+  <h2>Hve an important message? Contact here</h2>
   <form id="contactForm">
     <input type="text" id="name" name="from_name" placeholder="Your Name" required>
     <input type="email" id="email" name="from_email" placeholder="Your Email" required>
-    <textarea id="message" name="message" placeholder="Any messages that you may have" required></textarea>
-    <button type="submit" class="btn">Send Message</button>
+    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+    <button type="submit" class="btn">Fill out your message here</button>
   </form>
 </section>
 
@@ -83,7 +83,7 @@
   <script type="text/javascript">
     // Initialize EmailJS with your User ID
     (function() {
-      emailjs.init("YOUR_USER_ID"); // Replace with your actual EmailJS user ID
+      emailjs.init("zfGRwisTFhBJz9OQI"); // Replace with your actual EmailJS user ID
     })();
 
     // Add an event listener to handle form submission
@@ -96,7 +96,7 @@
       const message = document.getElementById("message").value;
 
       // Send the form data using EmailJS
-      emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+      emailjs.send("service_0ah5c9c", "template_1uk43fh", {
         from_name: name,
         from_email: email,
         message: message
@@ -120,7 +120,6 @@
   </ul>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
 
