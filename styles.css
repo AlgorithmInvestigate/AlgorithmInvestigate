@@ -312,53 +312,114 @@ footer {
   text-align: center;
 }
 /* Styles for mobile screens */
-@media screen and (max-width: 768px) {
-  .image-container {
-    display: block; /* Stack images vertically on mobile */
+@media only screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
   }
 
-  .image-container img {
-    width: 100%; /* Full width on mobile */
-    margin-bottom: 20px;
+  nav ul li {
+    margin: 1rem 0;
+  }
+
+  .hero {
+    background-position: center;
+    height: 60vh;
+    padding: 1rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .offerings-section h2 {
+    font-size: 2rem;
+  }
+
+  .offering-container {
+    flex-direction: column;
   }
 
   .offering {
-    width: 100%; /* Full width for offerings on mobile */
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 2rem;
   }
 
-  .description-section {
-    flex-direction: column; /* Stack image and description */
-    text-align: center; /* Center text on mobile */
+  .profile {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .description-section img {
-    margin-bottom: 20px; /* Space between image and text */
+  .profile-description {
+    text-align: center;
   }
-}
-.container {
-  width: 80%; /* Uses 80% of the screen width, adaptable to different devices */
-  margin: 0 auto;
+
+  .profile img {
+    max-width: 80%;
+  }
+
+  /* Adjust Substack Image */
+  .substack-image {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 
-img {
-  width: 100%; /* Image will resize based on its container's width */
-  height: auto;
-}
-.description-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
+/* Further Mobile Tweaks for Very Small Devices */
+@media only screen and (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
 
-@media screen and (max-width: 768px) {
-  .description-section {
-    flex-direction: column; /* Stack content vertically on smaller screens */
+  .hero-content p {
+    font-size: 0.9rem;
   }
-}
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 0.9rem; /* Slightly smaller font on mobile */
+
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
   }
-}
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .offering p {
+    font-size: 0.9rem;
+  }
+
+  .contact-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .profile-description h3 {
+    font-size: 1.2rem;
+  }
+
+  .profile-description p {
+    font-size: 0.9rem;
+  }
+
+  /* Adjust Footer Links */
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
