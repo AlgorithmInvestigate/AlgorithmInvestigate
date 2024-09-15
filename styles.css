@@ -166,70 +166,76 @@ nav ul li a:hover {
   color: #555;
 }
 
+
 /* Substack Section */
 .substack-section {
   text-align: center;
   padding: 50px 0;
-  background-color: #f0f0f0; /* Light background for separation */
+  background-color: #000; /* Black background */
 }
 
 .substack-image {
-  width: 80%; /* Make the image larger, 80% of the screen width */
-  max-width: 700px; /* Ensure it doesn't grow too big on large screens */
+  width: 80%; /* Large image to fit the screen */
+  max-width: 700px;
   height: auto;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Subtle white shadow for contrast */
   transition: transform 0.3s ease; /* Hover effect */
 }
 
 .substack-image:hover {
-  transform: scale(1.05); /* Subtle zoom-in on hover */
+  transform: scale(1.05); /* Zoom-in effect on hover */
+}
+
+.substack-section h2 {
+  color: #fff; /* White text for the heading */
+  font-size: 2.2em;
 }
 
 /* Profile Section */
 .about-section {
   padding: 50px 0;
-  background-color: #fff;
+  background-color: #000; /* Match the website's black background */
 }
 
 .profile-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px; /* Keep layout centered and tidy */
-  margin: 0 auto; /* Center the container */
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #333; /* Dark gray border for subtle contrast */
   border-radius: 8px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Slight shadow for a clean, modern look */
+  background-color: #111; /* Slightly lighter black for content area */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
 }
 
 .profile-image {
-  width: 200px; /* Adjust the image size */
+  width: 200px;
   height: 200px;
   border-radius: 50%;
-  object-fit: cover; /* Ensure image fits inside the circle */
-  margin-right: 30px; /* Space between image and text */
-  border: 4px solid #ddd; /* Add border for a polished look */
+  object-fit: cover;
+  margin-right: 30px;
+  border: 4px solid #333; /* Dark border to complement black background */
 }
 
 .profile-description {
   flex: 1;
-  text-align: left; /* Align the text to the left */
+  text-align: left;
 }
 
 .profile-description h3 {
   margin: 0;
-  font-size: 2em; /* Make the name more prominent */
-  color: #333; /* Darker text for readability */
+  font-size: 2em;
+  color: #fff; /* White for name */
 }
 
 .profile-description p {
   margin-top: 10px;
-  font-size: 1.2em; /* Slightly larger text for readability */
-  line-height: 1.6; /* Comfortable line spacing */
-  color: #666; /* Softer text color for body text */
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #ccc; /* Light gray for better readability against black */
 }
 
 form input, form textarea {
