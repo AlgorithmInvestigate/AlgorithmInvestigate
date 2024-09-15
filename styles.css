@@ -311,3 +311,54 @@ footer {
   padding: 1rem;
   text-align: center;
 }
+/* Styles for mobile screens */
+@media screen and (max-width: 768px) {
+  .image-container {
+    display: block; /* Stack images vertically on mobile */
+  }
+
+  .image-container img {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px;
+  }
+
+  .offering {
+    width: 100%; /* Full width for offerings on mobile */
+    margin-bottom: 20px;
+  }
+
+  .description-section {
+    flex-direction: column; /* Stack image and description */
+    text-align: center; /* Center text on mobile */
+  }
+
+  .description-section img {
+    margin-bottom: 20px; /* Space between image and text */
+  }
+}
+.container {
+  width: 80%; /* Uses 80% of the screen width, adaptable to different devices */
+  margin: 0 auto;
+}
+
+img {
+  width: 100%; /* Image will resize based on its container's width */
+  height: auto;
+}
+.description-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .description-section {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.9rem; /* Slightly smaller font on mobile */
+  }
+}
