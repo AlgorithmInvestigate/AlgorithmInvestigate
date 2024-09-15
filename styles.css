@@ -165,6 +165,52 @@ nav ul li a:hover {
   font-size: 1em;
   color: #555;
 }
+/* Offerings Section */
+.offerings-section {
+  background-color: #000; /* Black background to match website */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.offerings-section h2 {
+  color: #fff;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.offering-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.offering {
+  background-color: #111;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.offering-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.offering h3 {
+  color: #fff;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.offering p {
+  color: #ccc;
+  font-size: 1.2em;
+}
+
 
 
 /* Substack Section */
@@ -179,7 +225,8 @@ nav ul li a:hover {
   max-width: 700px;
   height: auto;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Subtle white shadow for contrast */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);/* Subtle white shadow for contrast */
+  margin-top: 30px;
   transition: transform 0.3s ease; /* Hover effect */
 }
 
