@@ -378,7 +378,62 @@ footer {
     margin: 0 auto;
   }
 }
+.grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
+/* Card styling */
+.card {
+  background: #1a1a1a;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 15px;
+  width: 30%; /* Default width for larger screens */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+  color: #00bcd4;
+}
+
+.card p {
+  color: #e0e0e0;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center the cards */
+  }
+
+  .card {
+    width: 100%; /* Make cards full width on mobile */
+    margin-bottom: 1rem; /* Add spacing between cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .card h3 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .card p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+}
 /* Further Mobile Tweaks for Very Small Devices */
 @media only screen and (max-width: 480px) {
   .hero-content h2 {
