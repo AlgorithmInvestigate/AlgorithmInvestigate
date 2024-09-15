@@ -166,25 +166,6 @@ nav ul li a:hover {
   color: #555;
 }
 
-form input, form textarea {
-  width: 100%;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  border: none;
-  background: #1a1a1a;
-  color: white;
-}
-
-form button {
-  background-color: #00bcd4;
-  color: white;
-  padding: 0.8rem 2rem;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
 /* Substack Section */
 .substack-section {
   text-align: center;
@@ -234,6 +215,25 @@ form button {
   margin-top: 10px;
   color: #555;
   font-size: 1.1em;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  background: #1a1a1a;
+  color: white;
+}
+
+form button {
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 
