@@ -48,7 +48,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background: url('ai-bg.jpg') no-repeat center center/cover;
+  background: #000 url('ai-bg.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -193,11 +193,10 @@ nav ul li a:hover {
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
 
-.offering-image {
-  width: 100%;
+.offering img, .profile img {
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 15px;
 }
 
 .offering h3 {
