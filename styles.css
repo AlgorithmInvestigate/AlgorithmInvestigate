@@ -211,7 +211,103 @@ nav ul li a:hover {
   font-size: 1.2em;
 }
 
+.offering-container {
+  display: flex;
+  justify-content: space-between; /* Adjusted for spacing with more offerings */
+  flex-wrap: wrap;
+}
 
+/* Mobile adjustments for the offerings */
+@media only screen and (max-width: 768px) {
+  .offering-container {
+    flex-direction: column; /* Stack offerings vertically on smaller screens */
+    align-items: center;
+  }
+
+  .offering {
+    width: 100%; /* Ensure full width for each offering on mobile */
+    margin-bottom: 2rem;
+  }
+}
+
+.offering {
+  background-color: #111;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%; /* Set equal widths for all offerings */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for offerings */
+.offering:hover {
+  transform: translateY(-5px);
+}
+
+/* Ensure text and image alignment in offering cards */
+.offering-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.offering h3 {
+  color: #fff;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.offering p {
+  color: #ccc;
+  font-size: 1.2em;
+}
+
+/* Paperfusion specific styling */
+#paperfusion-offering {
+  background-color: #1b1b1b; /* Slightly darker background for contrast */
+}
+
+#paperfusion-offering h3 {
+  color: #f39c12; /* Different color to distinguish the new offering */
+}
+
+#paperfusion-offering p {
+  color: #f0e68c; /* Light color for better readability */
+}
+
+/* Mobile-specific tweaks */
+@media (max-width: 768px) {
+  .offering-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offering {
+    width: 90%; /* Ensure offerings take up most of the screen width on mobile */
+    margin-bottom: 2rem;
+  }
+}
+
+/* Additional Media Queries for smaller screens */
+@media (max-width: 480px) {
+  .offering h3 {
+    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  .offering p {
+    font-size: 1rem; /* Adjust paragraph font size for readability */
+  }
+
+  .offering-container {
+    align-items: center; /* Center align offerings for a cleaner layout */
+  }
+
+  .offering {
+    width: 100%; /* Full width on small screens */
+  }
+}
 
 /* Substack Section */
 .substack-section {
