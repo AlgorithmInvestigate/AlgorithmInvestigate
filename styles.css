@@ -127,7 +127,36 @@ nav ul li a:hover {
 .card p {
   color: #e0e0e0;
 }
+.products-section {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
 
+.product {
+  margin: 20px auto;
+  width: 300px; /* Adjust as needed */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product h3 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.product p {
+  font-size: 1em;
+  color: #555;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
